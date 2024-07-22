@@ -29,7 +29,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['email']) && isset($_P
         $mail->Host = 'smtp.gmail.com';  // Update with your SMTP server hostname
         $mail->SMTPAuth = true;
         $mail->Username = 'noreplyarabicacafe@gmail.com'; // SMTP username
-        $mail->Password = 'luvkscpkzktwqiqo'; // SMTP password
+        $mail->Password = ''; // SMTP password
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS; // Enable TLS encryption
         $mail->Port = 587; // TCP port to connect to
 
