@@ -1,0 +1,209 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arabica Classic Latte</title>
+    <link rel="shortcut icon" href="../images/main-logo-transparent-orange-circle.png" sizes="30x30 32x32" type="image/x-icon" />
+    <!-- SWIPER -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <!-- Font Awesome CDN Link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- Custom CSS File Link  -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bill.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div id="menu-btn" class="fas fa-bars"></div>
+
+        <a href="../index.html" class="logo">Arabica Cofféé<i class="fas fa-mug-hot"></i></a>
+
+        <nav class="navbar">
+            <a href="../index.html">home</a>
+            <a href="about.html">about</a>
+            <a href="menu.html">menu</a>
+            <a href="#review">review</a>
+            <a href="book.html">book</a>
+            <a href="../index.php">Café</a>
+        </nav>
+
+        <a href="../html/reservation.php" class="btn">book a table</a>
+    </header>
+
+    <!-- HOME -->
+    <section class="home" id="home">
+        <div class="row">
+            <div class="content">
+                <h3>fresh Classic Latte in the morning</h3>
+                <a href="#menu" class="btn">buy one now</a>
+            </div>
+
+            <div class="image">
+                <img src="image/home-img-1.png" class="main-home-image" alt="">
+            </div>
+        </div>
+
+        <div class="image-slider">
+            <img src="image/home-img-1.png" alt="">
+            <img src="image/home-img-2.png" alt="">
+            <img src="image/home-img-3.png" alt="">
+        </div>
+    </section>
+<BR>
+    <section class="menu" id="menu">
+        <h1 class="heading">our menu <span>popular Classic Latte</span></h1>
+
+        <div class="box-container">
+            
+            <a href="#menu" class="box" onclick="addToCart({ name: 'Classic Latte', price: 30.99 })">
+                <img src="image/menu-6.png" alt="">
+                <div class="content">
+                    <h3>Classic Latte</h3>
+                    <p>A timeless favorite, the Classic Latte features a harmonious blend of smooth, velvety milk and robust espresso. Simple yet elegant, this latte is perfect for those who enjoy a traditional coffee experience.</p>
+                    <span>$30.99</span>
+                </div>
+            </a>
+            </a>
+        </div>
+    </section>
+<!-- Cart Section -->
+<section id="cart" class="cart-container">
+    <h1 class="heading">Cart<span>Your Item</span></h1>
+    <div id="cart-items" class="cart-items"></div>
+    <button class="btn checkout-btn" onclick="checkout()">Checkout</button>
+</section>
+    <section class="review" id="review">
+        <h1 class="heading">reviews <span>what people says</span></h1>
+
+        <div class="swiper review-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide box">
+                    <i class="fas fa-quote-left"></i>
+                    <i class="fas fa-quote-right"></i>
+                    <img src="image/pic-1.png" alt="">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>The Heartfelt Latte is a beautiful start to my morning. The heart art on top is adorable, 
+                        and the taste is just perfect. Highly recommend!</p>
+                    <h3>Nirali Godhani</h3>
+                    <span>satisfied client</span>
+                </div>
+
+                <div class="swiper-slide box">
+                    <i class="fas fa-quote-left"></i>
+                    <i class="fas fa-quote-right"></i>
+                    <img src="image/pic-2.png" alt="">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>I'm in love with the Heartfelt Latte. It's creamy, rich, and the heart design always brings a smile to my face.</p>
+                    <h3>Shirin Godhani</h3>
+                    <span>satisfied client</span>
+                </div>
+
+                <div class="swiper-slide box">
+                    <i class="fas fa-quote-left"></i>
+                    <i class="fas fa-quote-right"></i>
+                    <img src="image/pic-3.png" alt="">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>Sprinkle Delight is my go-to treat. The sprinkles add a fun touch, and the coffee itself is deliciously smooth and sweet.</p>
+                    <h3>Khush Diyora</h3>
+                    <span>satisfied founder</span>
+                </div>
+
+                <div class="swiper-slide box">
+                    <i class="fas fa-quote-left"></i>
+                    <i class="fas fa-quote-right"></i>
+                    <img src="image/pic-4.png" alt="">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>I wasn't sure about sprinkles on my coffee, but the Sprinkle Delight won me over. It's a playful and tasty twist on a classic.</p>
+                    <h3>Bìčlius</h3>
+                    <span>satisfied founder</span>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>our branches</h3>
+                <a href="#"><i class="fas fa-arrow-right"></i>Luxembourg</a>
+                <a href="#"><i class="fas fa-arrow-right"></i>USA</a>
+                <a href="#"><i class="fas fa-arrow-right"></i>Canada</a>
+                <a href="#"><i class="fas fa-arrow-right"></i>Europe</a>
+                <a href="#"><i class="fas fa-arrow-right"></i>Bharat</a>
+                <a href="#"><i class="fas fa-arrow-right"></i>France</a>
+            </div>
+
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="../index.html"><i class="fas fa-arrow-right"></i>Home</a>
+                <a href="about.html"><i class="fas fa-arrow-right"></i>About</a>
+                <a href="menu.html"><i class="fas fa-arrow-right"></i>Menu</a>
+                <a href="#review"><i class="fas fa-arrow-right"></i>Review</a>
+                <a href="book.html"><i class="fas fa-arrow-right"></i>Book</a>
+                <a href="../index.php"><i class="fas fa-arrow-right"></i>Café</a>
+            </div>
+
+
+            <div class="box">
+                <h3>contact info</h3>
+                <a href="#"><i class="fas fa-phone"></i> +91-931-689-0367</a>
+                <a href="#"><i class="fas fa-phone"></i> +91-878-049-7604</a>
+                <a href="#"><i class="fas fa-envelope"></i> enquiry@arabicacoffee.com</a>
+                <a href="#"><i class="fas fa-map-pin"></i> Echternach, Luxembourg</a>
+            </div>
+
+            <div class="box">
+                <h3>contact info</h3>
+                <a href="https://www.facebook.com/profile.php?id=61561705631837"><i class="fab fa-facebook-f"></i> Facebook</a>
+                <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+                <a href="https://www.instagram.com/arabicacafe.lu/"><i class="fab fa-instagram"></i> Instagram</a>
+                <a href="#"><i class="fab fa-linkedin"></i> Linkedin</a>
+            </div>
+        </div>
+
+        <div class="credit">created by <span>Bìčlius & Khush</span> | © 2022 All Rights Reserved</div>
+       
+    </section>
+
+    <!-- SWIPER -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <!-- Custom JS File Link  -->
+    <script src="js/script.js"></script>
+    <script src="js/bill.js"></script>
+</body>
+
+</html>
